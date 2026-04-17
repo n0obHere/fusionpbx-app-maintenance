@@ -28,8 +28,8 @@ declare(strict_types=1);
 
 //check permission
 require_once dirname(__DIR__, 2) . '/resources/require.php';
-require_once "resources/check_auth.php";
-require_once "resources/paging.php";
+require_once __DIR__ . '/resources/check_auth.php';
+require_once __DIR__ . '/resources/paging.php';
 require_once __DIR__ . '/resources/functions.php';
 
 if (permission_exists('maintenance_view')) {
